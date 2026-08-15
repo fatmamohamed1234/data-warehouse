@@ -1,4 +1,4 @@
---duckdb dw_marts.duckdb -c ".read build_marts.sql"--
+--duckdb dw_marts.duckdb -c ".read build_marts.sql"
 
 
 --step 1:create star schema tables
@@ -6,3 +6,6 @@
 
 --step 2: load data from csv files into tables
 .read 02_load_schema_dw.sql
+
+--step 3: Mart -create flat mart
+.read 03_create_flat_mart.sql
