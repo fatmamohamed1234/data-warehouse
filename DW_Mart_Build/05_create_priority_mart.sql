@@ -15,8 +15,8 @@ CREATE TABLE priority_mart.priority_roles (
 INSERT INTO priority_mart.priority_roles (role_id, role_name, priority_lvl)
 values
     (1, 'Data Engineer', 2),
-    (2, 'senior Data Engineer', 1),
-    (3, 'software Engineer', 3);
+    (2, 'Senior Data Engineer', 1),
+    (3, 'Software Engineer', 3);
 
 
 
