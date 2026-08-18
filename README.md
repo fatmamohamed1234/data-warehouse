@@ -137,6 +137,17 @@ The pipeline transforms job posting CSVs from Google Cloud Storage into a normal
 
 ---
 
+## Data Warehouse Marts (Shared Access)
+
+The final marts are shared via a MotherDuck share link so downstream tools (Tableau, Power BI, other DuckDB clients) can attach directly:
+
+```sql
+-- Run this snippet to attach database
+ATTACH 'md:_share/my_dw_marts/a53e50e9-1419-48bb-99f4-6ef25d66b766';
+```
+
+---
+
 ## Tools
 
 SQL | DuckDB | MotherDuck | Git | GitHub
